@@ -19,6 +19,36 @@ body{
    background-color: white;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.flex-item {
+  flex: 1;
+
+  padding: 10px;
+  box-sizing: border-box;
+
+
+
+}
+
+.fixed-width {
+  text-align:center;
+}
+
+.flex-left{
+  text-align: left;
+
+}
+
+.flex-right{
+  justify-content: flex-end;
+
+}
+
 .nav a{
   color:#53565A;
   font-size:14px;
