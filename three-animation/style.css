@@ -1,0 +1,182 @@
+body{
+	margin:0;
+	padding:0;
+   background-color: #999;
+   font-size: 40px;
+   font-family: sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+
+
+.outer{
+  text-align: center;
+}
+
+.page{
+	position:relative;
+	margin-top:0px;
+	background-color: #FFF;
+   max-width:1200px;
+   width:100%;
+  height:100%;
+  display: inline-block;
+   text-align: center;
+   height:98vh;
+}
+
+/* animation 1 */
+
+.a_box{
+   text-align: center;
+   font-size:20px;
+   color:#FFF;
+  background-color:#7B69AE;
+   padding:20px;
+   width:200px;
+   height:200px;
+   box-sizing: border-box;
+   margin:50px;
+   display: inline-block;
+
+}
+
+.a_box:hover{
+   animation-fill-mode: forwards;
+   animation-name: changescale;
+   animation-timing-function: ease-out;
+}
+
+.a_box:hover{
+   animation-fill-mode: forwards;
+   animation-name: changescale_radius;
+   animation-duration: .5s;
+   animation-timing-function: ease-out;
+}
+
+/* animation 2 */
+
+.b_box{
+   text-align: center;
+   font-size:20px;
+   color:#FFF;
+   background-color:#F56D49;
+   padding:20px;
+   width:200px;
+   height:200px;
+   box-sizing: border-box;
+   margin:50px;
+   display: inline-block;
+	
+	animation-fill-mode: forwards;
+   animation-name: rotate;
+	animation-delay:2s;
+   animation-duration: 2s;
+   animation-timing-function: ease-out;
+
+
+}
+
+
+
+/* animation 3 */
+
+.c_box{
+   text-align: center;
+   font-size:20px;
+   color:#FFF;
+   background-color:#32C6F4;
+   padding:20px;
+   width:200px;
+   height:200px;
+   box-sizing: border-box;
+   margin:50px;
+   display: inline-block;
+
+   animation-fill-mode: forwards;
+   animation-name: changescale;
+	animation-delay:2s;
+   animation-duration: 2s;
+   animation-timing-function: ease-out;
+
+
+}
+
+@keyframes changescale{
+  
+	0% {
+		background-color: #32C6F4;
+		transform: scale(1,1);
+	}
+	
+	50%{
+		background-color:#25F5B3;
+		transform:skewX(30deg);
+	}
+	
+	100%{
+  		 background-color:#32C6F4;
+		transform:scale(1,1);
+		
+	}
+	
+}
+
+@keyframes rotate{
+  
+	0% {
+
+		transform: scale(1,1);
+		transform:rotateY(180deg);
+		transform:rotateX(180deg);
+		transform:rotateZ(180deg);
+
+	}
+	
+	50%{
+	transform:scale(1.5,1);
+		transform:translate(0px, 300px);
+		background-color: #F5B918;
+		
+	}
+	
+	100%{
+
+		transform:scale(1,1);
+		background-color: #F5B918;
+	
+	}
+}
+
+@keyframes changescale_radius{
+	0%{
+		background-color: #32C6F4;
+		transform: scale(1,1);
+		border-radius:40px;
+	}
+	
+	50%{
+		background-color:#25F5B3;
+		transform:scale(2,2);
+		border-radius:80px;
+	}
+	
+	100%{
+		background-color:#32C6F4;
+		transform:scale(1,1);
+		border-radius:40px;
+	}
+	
+	}
+
+
+
+
+
+
+/* animaitn 1 */
