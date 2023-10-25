@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filters</title>
+
+	<style>
+     .my_filter{
+
+      position: relative;
+  -webkit-filter: grayscale(100%) invert(100%);
+  filter: grayscale(100%) invert(100%);
+
+      
+
+     }
+
+
+
+
+
+    .my_filter:hover{
+
+      animation: 3s myfilteranimation forwards;
+
+    }
+
+
+
+
+     @keyframes myfilteranimation{
+      
+	      100%{
+	       -webkit-filter: opacity(.8) sepia(.5); 
+	        filter: opacity(.8) sepia(.5);
+	       }
+
+     }
+
+
+
+
+	</style>
+</head>
+<body>
+
+<figure class="my_filter">
+  <img src="img/facesculpture.jpeg" alt="Face Sculpture" style="width:800px">
+</figure>
+
+</body>
+</html>
