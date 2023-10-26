@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transitions</title>
+
+   
+
+   <style>
+
+
+   	body{
+   		font-family: sans-serif;
+   		font-size:60px;
+   		color:#FFF;
+   	}
+
+   	.cardholder{
+        text-align: center;
+
+   	}
+      
+    .card{
+    	position: relative;
+       display: inline-block;
+    }
+
+    .card img{
+
+      width:100%;
+      height:auto;
+    }
+
+
+    .center {
+
+     padding: 60% 0;
+     text-align: center;
+    }
+
+
+
+
+    .card:hover img{
+
+  animation: rotate 2s ease-out forwards;
+
+
+    }
+
+    .card_text{
+    	margin:0;
+    }
+
+@keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+				-webkit-filter:invert:(100%);
+				filter: invert(100%);
+				transition: 1s filter ease;
+            }
+        }
+
+   </style>
+
+</head>
+<body>
+
+
+
+
+	<div class="cardholder">
+       <div class="card">
+       	  
+       	  <img src="img/facesculpture.jpeg" alt="Face Sculpture" style="width:200px">
+       </div>
+	</div>
+
+</body>
+</html>
